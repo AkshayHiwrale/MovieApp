@@ -54,6 +54,7 @@ class MovieDetailsActivity : AppCompatActivity() {
         movieListViewModel.moviesDetails.observe(this, Observer {
             it.data?.let { it1 ->
                 title_view.text = it.data.title
+                title_movie.text = it.data.title
                 tv_discription.text = it.data.overview
                 title_movie_data.text = it.data.releaseDate
 
